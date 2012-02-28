@@ -4,9 +4,9 @@ This is a fun project I created to leverage the newest real time computing platf
 
 I have written a library to compute moving average and spike detection for continuous stream of data that can be applied to finance or any other streams. The purpose of the library is I want to create a library of bolts that can do certain operations and we can reuse these bolts than starting over from scratch.
 
-Let us start with deploying my project on single node. Deploying it on single node is very simple.
+Let us start with deploying my project on single node. Deploying it on single node is very simple. I benchmarked this project to process 96,000 sensor values per second on cluster of 3 machines. It detects spike within few milliseconds.
 
-Hardware Requirements:
+Hardware Requirements: (Not necessary as you can generate input like sensor data input using inputStreamSpout)
 
 1.	arduino kit with circuit design of photo resistor.
 2.	Interface this kit with your laptop using serial port and run the light program I submitted to generate light intensity events.
